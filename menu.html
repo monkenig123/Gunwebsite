@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Firearms Archive — Menu</title>
+  <p class="status">SYSTEM STATUS: ONLINE • CLEARANCE LEVEL: PUBLIC</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== Base Styling (matches your site) ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1216;
+  color: #e6e6e6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #141a22;
+  border-bottom: 2px solid #2c3a4f;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  padding: 3rem 1rem;
+}
+
+/* ===== Menu Card ===== */
+.menu-card {
+  background: #1a2230;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.menu-card h2 {
+  margin-top: 0;
+  color: #66aaff;
+  letter-spacing: 1px;
+}
+
+/* ===== Buttons ===== */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.menu-buttons button {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #1e2a3f;
+  color: #cfd8ff;
+  border: 1px solid #2f4c7a;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.menu-buttons button:hover {
+  background: #66aaff;
+  color: #050b15;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(102,170,255,0.5);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+  
+  .menu-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, #0f1216, #141a22);
+  border-bottom: 2px solid #2c3a4f;
+}
+
+.menu-header h1 {
+  font-family: monospace;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: #66aaff;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header p {
+  font-size: 0.9rem;
+  color: #aab3c2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+  
+  .status {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #7cff7c;
+  margin-top: 0.5rem;
+}
+</style>
+</head>
+
+<body>
+
+<header class="menu-header">
+  <h1>ARMAMENT WEAPON ARCHIVE</h1>
+  <p>Accessing Archived Weapons Files</p>
+</header>
+
+<main class="grid">
+  <article class="menu-card">
+    <h2>SELECT MODULE</h2>
+
+    <div class="menu-buttons">
+      <button onclick="location.href='index.html'">
+        Weapons Information
+      </button>
+      
+    <button onclick="location.href='video.html'">
+      Weapons Fired
+    </button>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <img src="videos/homer.gif" alt="Homer">
+</footer>
+
+</body>
+</html>

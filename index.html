@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Firearms Archive</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>
+function filterGuns(type) {
+  const cards = document.querySelectorAll('.card');
+  const buttons = document.querySelectorAll('.category-bar button');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  cards.forEach(card => {
+    if (type === 'all' || card.classList.contains(type)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+<body>
+
+  <a href="menu.html" class="back-button">← Menu</a>
+  
+<header>
+  <h1>Firearms Historical Archive</h1>
+  <p>Educational reference on notable firearms</p>
+</header>
+
+<nav class="category-bar">
+  <button onclick="filterGuns('all')" class="active">All</button>
+  <button onclick="filterGuns('rifle')">Rifles</button>
+  <button onclick="filterGuns('pistol')">Pistols</button>
+  <button onclick="filterGuns('smg')">SMGs</button>
+  <button onclick="filterGuns('sniper')">Snipers</button>
+</nav>
+  
+<main class="grid">
+
+  
+  <!-- Rifle -->
+  <article class="card rifle">
+    <img src="images/m4.jpg" alt="M4 Carbine">
+    <h2>M4 Carbine</h2>
+    <ul>
+      <li><strong>Origin:</strong> United States</li>
+      <li><strong>Caliber:</strong> 5.56×45mm NATO</li>
+      <li><strong>Introduced:</strong> 1994</li>
+      <li><strong>Type:</strong> Carbine</li>
+    </ul>
+    <p>
+      The M4 Carbine is a compact derivative of the M16 rifle family developed for increased mobility in modern combat environments. Introduced in the 1990s, it was designed to meet the needs of mechanized infantry and special operations forces requiring a lighter and more adaptable weapon platform. Its shortened barrel and collapsible stock improve maneuverability in confined spaces while maintaining compatibility with existing NATO standards. The M4’s modular architecture supports a wide range of optics and accessories, reflecting a shift toward customization in modern military doctrine. It has become a defining symbol of 21st-century Western infantry forces.
+    </p>
+  </article>
+  <!-- Rifle -->
+  <article class="card rifle">
+    <img src="images/ak47.jpg" alt="AK-47">
+    <h2>AK-47</h2>
+    <ul>
+      <li><strong>Origin:</strong> Soviet Union</li>
+      <li><strong>Caliber:</strong> 7.62×39mm</li>
+      <li><strong>Introduced:</strong> 1947</li>
+      <li><strong>Type:</strong> Assault Rifle</li>
+    </ul>
+    <p>
+      The AK-47 was developed in the Soviet Union in the aftermath of World War II and officially adopted in 1947. Designed by Mikhail Kalashnikov, it emphasized reliability, ease of production, and operation under extreme conditions. Its simple construction and loose tolerances allowed it to function in environments where more complex systems might fail. The rifle’s widespread distribution during the Cold War led to its adoption by numerous nations and non-state groups worldwide. Over time, the AK-47 became more than a weapon, evolving into a cultural and political symbol representing revolution, resistance, and industrial-era mass armament.
+    </p>
+  </article>
+  <!-- Pistol -->
+  <article class="card pistol">
+    <img src="images/glock17.jpg" alt="Glock 17">
+    <h2>Glock 17</h2>
+    <ul>
+      <li><strong>Origin:</strong> Austria</li>
+      <li><strong>Caliber:</strong> 9×19mm</li>
+      <li><strong>Introduced:</strong> 1982</li>
+      <li><strong>Type:</strong> Semi-automatic Pistol</li>
+    </ul>
+    <p>
+      The Glock 17, introduced in the early 1980s, marked a major shift in handgun design through its extensive use of polymer materials. Developed in Austria, it challenged traditional perceptions of durability by demonstrating that non-metal frames could withstand military and law enforcement use. Its lightweight construction, simplified internal design, and emphasis on reliability contributed to rapid international adoption. The Glock 17 influenced an entire generation of modern pistols, encouraging manufacturers to rethink ergonomics, materials, and manufacturing efficiency. Today, it is widely studied as a landmark example of late-20th-century industrial and engineering innovation in firearms design.
+    </p>
+  </article>
+  <!-- Rifle -->
+  <article class="card rifle">
+  <img src="images/m16a4.jpg" alt="M16A4 Rifle">
+  <h2>M16A4</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States</li>
+    <li><strong>Caliber:</strong> 5.56×45mm NATO</li>
+    <li><strong>Introduced:</strong> 1997</li>
+    <li><strong>Type:</strong> Service Rifle</li>
+  </ul>
+  <p>
+    The M16A4 represents a later stage in the evolution of the M16 rifle platform, incorporating decades of operational feedback and technological refinement. Adopted primarily by the U.S. Marine Corps, it features a full-length barrel and a flat-top receiver designed to accommodate modern optics. The A4 variant reflects a transitional period in military small-arms development, bridging traditional iron-sight rifles with fully modular systems. Its continued service highlights the adaptability of the original M16 design and underscores the importance of incremental improvement rather than complete replacement in long-term military equipment programs.
+  </p>
+  </article>
+  <!-- Pistol -->
+  <article class="card pistol">
+  <img src="images/m1911.jpg" alt="M1911 Pistol">
+  <h2>M1911</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States</li>
+    <li><strong>Caliber:</strong> .45 ACP</li>
+    <li><strong>Introduced:</strong> 1911</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The M1911 is a semi-automatic pistol designed by John Moses Browning and formally adopted by the United States military in 1911. Its development followed combat experience that highlighted the need for a more effective service sidearm. Chambered in .45 ACP, the pistol became known for its balance, durability, and reliability under harsh conditions. The M1911 served as the standard U.S. military handgun through World War I, World War II, the Korean War, and the Vietnam War. Beyond military service, it has had lasting influence on handgun design and remains widely studied for its mechanical simplicity and historical significance.
+  </p>
+  </article>
+  
+  <article class="card smg">
+  <img src="images/uzi.jpg" alt="Uzi Submachine Gun">
+  <h2>Uzi</h2>
+  <ul>
+    <li><strong>Origin:</strong> Israel</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1954</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The Uzi submachine gun was developed in Israel in the early 1950s and became known for its compact size and distinctive profile. Designed for armored crews and support personnel, it prioritized ease of handling and storage in confined environments. The Uzi’s widespread export success made it a recognizable presence in military, security, and popular culture contexts throughout the Cold War. Its straightforward construction and unique layout contributed to its reputation as a practical defensive weapon for its era. Today, the Uzi is often studied as an example of post-war innovation driven by national security needs.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/mp5.jpg" alt="Heckler & Koch MP5">
+  <h2>HK MP5</h2>
+  <ul>
+    <li><strong>Origin:</strong> Germany</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1966</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The MP5 is a German submachine gun introduced in the 1960s and renowned for its precision engineering and controlled handling. Unlike many contemporaries, it employed a delayed-roller blowback system derived from earlier rifle designs, contributing to its smooth operation. The MP5 gained prominence through widespread adoption by military, law enforcement, and counter-terrorism units during the late Cold War period. Its association with specialized units and hostage-rescue operations helped define the visual identity of elite tactical forces. The MP5 remains influential as a benchmark for quality and refinement in compact firearm design.
+  </p>
+</article>
+  
+  <article class="card sniper">
+  <img src="images/barrettm82.jpg" alt="Barrett M82">
+  <h2>Barrett M82</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States</li>
+    <li><strong>Caliber:</strong> .50 BMG</li>
+    <li><strong>Introduced:</strong> 1989</li>
+    <li><strong>Type:</strong> Anti-materiel Rifle</li>
+  </ul>
+  <p>
+    The Barrett M82 is a semi-automatic, large-caliber rifle introduced in the 1980s and designed for long-range and specialized military roles. Developed by Ronnie Barrett, it gained attention for its ability to operate at distances beyond traditional infantry weapons. The rifle’s design emphasizes durability, recoil mitigation, and adaptability to harsh environments. It has been adopted by numerous armed forces for tasks involving material targeting and extended-range engagement. Beyond its operational role, the M82 represents a shift toward highly specialized firearms developed outside traditional state arsenals, influencing modern approaches to precision and long-range military equipment.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/deserteagle.jpg" alt="Desert Eagle">
+  <h2>Desert Eagle</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States / Israel</li>
+    <li><strong>Caliber:</strong> .50 AE / .44 Magnum</li>
+    <li><strong>Introduced:</strong> 1983</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The Desert Eagle is a large-frame semi-automatic pistol developed in the late 20th century and is notable for its unconventional engineering and imposing appearance. Designed in the United States with contributions from Israeli manufacturers, it was created to chamber powerful cartridges rarely associated with semi-automatic handguns. Its distinctive size and angular profile set it apart from traditional service pistols, making it more prominent in sporting, cinematic, and popular culture contexts than in military adoption. The Desert Eagle is widely recognized as a symbol of excess and mechanical ambition, often studied for its unique design approach rather than practical battlefield application.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/scar.jpg" alt="FN SCAR">
+  <h2>FN SCAR</h2>
+  <ul>
+    <li><strong>Origin:</strong> Belgium</li>
+    <li><strong>Caliber:</strong> 5.56×45mm / 7.62×51mm</li>
+    <li><strong>Introduced:</strong> 2009</li>
+    <li><strong>Type:</strong> Modular Rifle</li>
+  </ul>
+  <p>
+    The FN SCAR was developed in the early 21st century in response to evolving military requirements for adaptable weapon systems. Designed with modularity as a core principle, it allows configuration changes to suit different operational roles. The rifle reflects modern military emphasis on flexibility, interoperability, and ergonomic design. Its development process incorporated extensive user feedback, signaling a shift toward soldier-centric equipment design. The SCAR’s architecture and materials illustrate contemporary trends in firearms engineering, where adaptability and lifecycle support are as important as performance. It stands as a representative example of modern Western small-arms philosophy.
+  </p>
+</article>
+  
+  <article class="card sniper">
+  <img src="images/awm.jpg" alt="Accuracy International AWM">
+  <h2>Accuracy International AWM</h2>
+  <ul>
+    <li><strong>Origin:</strong> United Kingdom</li>
+    <li><strong>Caliber:</strong> .300 Winchester Magnum / .338 Lapua Magnum</li>
+    <li><strong>Introduced:</strong> 1993</li>
+    <li><strong>Type:</strong> Bolt-action Sniper Rifle</li>
+  </ul>
+  <p>
+    The Accuracy International Arctic Warfare Magnum (AWM) is a bolt-action sniper
+    rifle developed in the United Kingdom and introduced during the late Cold War.
+    It was designed with extreme environmental reliability in mind, particularly
+    for cold-weather operations. The AWM gained international recognition through
+    adoption by military and law enforcement units seeking long-range precision and
+    consistency. Its design emphasizes durability, precision manufacturing, and
+    modular adaptability. The Arctic Warfare series helped establish Accuracy
+    International as a leading manufacturer of precision rifles and remains a
+    benchmark in modern sniper rifle design.
+  </p>
+</article>
+  
+  <article class="card sniper">
+  <img src="images/svd.jpg" alt="Dragunov SVD">
+  <h2>Dragunov SVD</h2>
+  <ul>
+    <li><strong>Origin:</strong> Soviet Union</li>
+    <li><strong>Caliber:</strong> 7.62×54mmR</li>
+    <li><strong>Introduced:</strong> 1963</li>
+    <li><strong>Type:</strong> Semi-automatic Designated Marksman Rifle</li>
+  </ul>
+  <p>
+    The Dragunov SVD is a semi-automatic rifle developed in the Soviet Union to extend
+    the effective range of standard infantry units. Unlike traditional sniper rifles,
+    it was designed for squad-level support rather than isolated precision roles.
+    Its design prioritizes reliability, durability, and ease of integration into
+    existing military formations. The SVD has been widely adopted across Eastern
+    Europe, Asia, and the Middle East, and remains an influential example of a
+    designated marksman rifle concept.
+  </p>
+</article>
+  
+  <article class="card sniper">
+  <img src="images/cheytac.jpg" alt="CheyTac M200">
+  <h2>CheyTac M200</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States</li>
+    <li><strong>Caliber:</strong> .408 CheyTac</li>
+    <li><strong>Introduced:</strong> Early 2000s</li>
+    <li><strong>Type:</strong> Bolt-action Precision Rifle</li>
+  </ul>
+  <p>
+    The CheyTac M200 is a large-caliber bolt-action rifle developed to explore
+    extreme long-range ballistic performance. Introduced in the early 21st century,
+    it reflects growing interest in precision engineering at distances beyond
+    traditional sniper roles. Its size and specialized design place it firmly in
+    experimental and niche military contexts rather than standard infantry use.
+    The M200 is frequently referenced in discussions of long-range accuracy,
+    ballistic research, and the technological limits of modern small-arms design.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/g36.jpg" alt="Heckler & Koch G36">
+  <h2>Heckler & Koch G36</h2>
+  <ul>
+    <li><strong>Origin:</strong> Germany</li>
+    <li><strong>Caliber:</strong> 5.56×45mm NATO</li>
+    <li><strong>Introduced:</strong> 1997</li>
+    <li><strong>Type:</strong> Assault Rifle</li>
+  </ul>
+  <p>
+    The G36 was developed as a lightweight, modern replacement for earlier German
+    service rifles following the end of the Cold War. Its extensive use of polymer
+    materials reflects late-20th-century trends in weight reduction and manufacturing
+    efficiency. The rifle was designed to integrate optical systems from the outset,
+    highlighting the increasing importance of advanced sighting technology in modern
+    infantry doctrine.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/fnfal.jpg" alt="FN FAL">
+  <h2>FN FAL</h2>
+  <ul>
+    <li><strong>Origin:</strong> Belgium</li>
+    <li><strong>Caliber:</strong> 7.62×51mm NATO</li>
+    <li><strong>Introduced:</strong> 1953</li>
+    <li><strong>Type:</strong> Battle Rifle</li>
+  </ul>
+  <p>
+    The FN FAL is a selective-fire rifle developed by Fabrique Nationale and adopted
+    by more than 90 countries during the Cold War. Often referred to as “The Right
+    Arm of the Free World,” it became a standard infantry weapon among NATO and allied
+    nations. Its widespread adoption reflects the geopolitical divisions of the era
+    and the demand for a powerful, standardized service rifle during mid-20th-century
+    military expansion.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/famas.jpg" alt="FAMAS">
+  <h2>FAMAS</h2>
+  <ul>
+    <li><strong>Origin:</strong> France</li>
+    <li><strong>Caliber:</strong> 5.56×45mm NATO</li>
+    <li><strong>Introduced:</strong> 1978</li>
+    <li><strong>Type:</strong> Bullpup Assault Rifle</li>
+  </ul>
+  <p>
+    The FAMAS is a French-designed bullpup assault rifle developed to modernize the
+    nation’s infantry forces during the late Cold War. Its compact configuration and
+    distinctive appearance made it one of the most recognizable service rifles of
+    its era. The FAMAS reflects France’s independent approach to military equipment
+    development and remained in service for decades as a symbol of national arms
+    production and innovation.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/aug.jpg" alt="Steyr AUG">
+  <h2>Steyr AUG</h2>
+  <ul>
+    <li><strong>Origin:</strong> Austria</li>
+    <li><strong>Caliber:</strong> 5.56×45mm NATO</li>
+    <li><strong>Introduced:</strong> 1977</li>
+    <li><strong>Type:</strong> Bullpup Assault Rifle</li>
+  </ul>
+  <p>
+    The Steyr AUG is a bullpup-configured assault rifle that gained attention for its
+    futuristic appearance and integrated design. Developed during the late Cold War,
+    it combined optics, ergonomics, and compact dimensions into a single system.
+    Its bullpup layout allowed a full-length barrel within a shorter overall profile,
+    influencing later rifle designs and demonstrating alternative approaches to
+    infantry weapon ergonomics.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/sg550.jpg" alt="SIG SG 550">
+  <h2>SIG SG 550</h2>
+  <ul>
+    <li><strong>Origin:</strong> Switzerland</li>
+    <li><strong>Caliber:</strong> 5.56×45mm NATO</li>
+    <li><strong>Introduced:</strong> 1986</li>
+    <li><strong>Type:</strong> Assault Rifle</li>
+  </ul>
+  <p>
+    The SIG SG 550 was developed as the standard service rifle of the Swiss Armed
+    Forces and is known for its precision manufacturing and reliability. Designed to
+    meet the demands of alpine and cold-weather environments, it reflects Switzerland’s
+    emphasis on defensive readiness and engineering quality. The SG 550 has earned
+    a strong reputation internationally and remains a respected example of European
+    military firearm design.
+  </p>
+</article>
+  
+  <article class="card rifle">
+  <img src="images/stg44.jpg" alt="Sturmgewehr 44">
+  <h2>Sturmgewehr 44 (StG 44)</h2>
+  <ul>
+    <li><strong>Origin:</strong> Nazi Germany</li>
+    <li><strong>Caliber:</strong> 7.92×33mm Kurz</li>
+    <li><strong>Introduced:</strong> 1944</li>
+    <li><strong>Type:</strong> Assault Rifle</li>
+  </ul>
+  <p>
+    The Sturmgewehr 44 is widely regarded as the world’s first true assault rifle and
+    one of the most influential infantry weapons ever developed. Introduced during
+    the final years of World War II, it combined a detachable magazine, selective-fire
+    capability, and an intermediate cartridge, addressing the realities of modern
+    battlefield engagement ranges. Although fielded too late to affect the outcome
+    of the war, the StG 44 demonstrated a revolutionary concept that reshaped military
+    small-arms design. Its core principles directly influenced post-war rifles such as
+    the AK-47 and established the foundation for modern assault rifle doctrine.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/p226.jpg" alt="SIG Sauer P226">
+  <h2>SIG Sauer P226</h2>
+  <ul>
+    <li><strong>Origin:</strong> Switzerland / Germany</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1984</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The SIG Sauer P226 was developed during military handgun trials in the 1980s and
+    quickly earned a reputation for precision manufacturing and durability. Although
+    not selected as the primary U.S. service pistol, it saw extensive adoption by
+    military, law enforcement, and special units worldwide. The P226 reflects a
+    design philosophy focused on accuracy, reliability, and long-term service use.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/m9.jpg" alt="Beretta M9">
+  <h2>Beretta M9</h2>
+  <ul>
+    <li><strong>Origin:</strong> Italy / United States</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1985</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The Beretta M9 was adopted by the United States military in the mid-1980s as part
+    of a broader standardization effort among NATO forces. Based on the Beretta 92
+    series, it is known for its open-slide design and emphasis on reliability in
+    varied environments. The M9 served as the standard U.S. military sidearm for
+    several decades and became closely associated with late Cold War and post–Cold
+    War service history.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/hipower.jpg" alt="Browning Hi-Power">
+  <h2>Browning Hi-Power</h2>
+  <ul>
+    <li><strong>Origin:</strong> Belgium</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1935</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The Browning Hi-Power was one of the most widely adopted military pistols of the
+    20th century. Designed by John Moses Browning and completed by Dieudonné Saive,
+    it introduced a high-capacity magazine that influenced future handgun designs.
+    The Hi-Power served in numerous armed forces across the globe and remains a
+    landmark in handgun development history.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/usp.jpg" alt="Heckler & Koch USP">
+  <h2>Heckler & Koch USP</h2>
+  <ul>
+    <li><strong>Origin:</strong> Germany</li>
+    <li><strong>Caliber:</strong> 9×19mm / .45 ACP</li>
+    <li><strong>Introduced:</strong> 1993</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The Heckler & Koch USP was developed as a modern service pistol emphasizing
+    durability and adaptability. Introduced in the early 1990s, it reflected advances
+    in materials and ergonomic design. The USP platform was adopted by numerous
+    military and law enforcement agencies and helped establish H&K’s reputation in
+    the modern polymer-framed handgun market.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/tt33.jpg" alt="Tokarev TT-33">
+  <h2>Tokarev TT-33</h2>
+  <ul>
+    <li><strong>Origin:</strong> Soviet Union</li>
+    <li><strong>Caliber:</strong> 7.62×25mm Tokarev</li>
+    <li><strong>Introduced:</strong> 1933</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The Tokarev TT-33 was developed as a standard sidearm for Soviet forces during the
+    interwar period. Its design emphasized simplicity and ease of mass production,
+    reflecting the industrial priorities of the era. The TT-33 saw widespread use
+    during World War II and influenced later handgun designs across Eastern Europe
+    and Asia through extensive post-war distribution.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/cz75.jpg" alt="CZ 75">
+  <h2>CZ 75</h2>
+  <ul>
+    <li><strong>Origin:</strong> Czechoslovakia</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1975</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The CZ 75 is a renowned service pistol that emerged during the Cold War and became
+    widely respected for its ergonomic design and mechanical reliability. Although
+    initially produced behind the Iron Curtain, it gained international recognition
+    through civilian and competitive shooting circles. The CZ 75 influenced numerous
+    later handgun designs and remains a significant example of Eastern European
+    firearms engineering.
+  </p>
+</article>
+  
+  <article class="card pistol">
+  <img src="images/fiveseven.jpg" alt="FN Five-seveN">
+  <h2>FN Five-seveN</h2>
+  <ul>
+    <li><strong>Origin:</strong> Belgium</li>
+    <li><strong>Caliber:</strong> 5.7×28mm</li>
+    <li><strong>Introduced:</strong> 1998</li>
+    <li><strong>Type:</strong> Semi-automatic Pistol</li>
+  </ul>
+  <p>
+    The FN Five-seveN was developed in the late 1990s as part of a broader personal
+    defense weapon ecosystem. Designed to complement compact carbines using the same
+    ammunition, it features a lightweight polymer frame and high-capacity magazine.
+    The Five-seveN gained attention for its unconventional caliber and modern design,
+    becoming a distinctive example of late Cold War–era and post-Cold War handgun
+    development.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/ppsh41.jpg" alt="PPSh-41">
+  <h2>PPSh-41</h2>
+  <ul>
+    <li><strong>Origin:</strong> Soviet Union</li>
+    <li><strong>Caliber:</strong> 7.62×25mm Tokarev</li>
+    <li><strong>Introduced:</strong> 1941</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The PPSh-41 was developed for mass production during World War II and became one of
+    the most prolific submachine guns ever manufactured. Its high rate of fire and
+    rugged construction suited the harsh conditions of the Eastern Front. The PPSh-41
+    symbolized Soviet industrial mobilization and close-quarters infantry combat.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/thompson.jpg" alt="Thompson M1A1">
+  <h2>Thompson M1A1</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States</li>
+    <li><strong>Caliber:</strong> .45 ACP</li>
+    <li><strong>Introduced:</strong> 1942</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The Thompson M1A1 was a simplified wartime variant of the original Thompson
+    submachine gun, produced to meet the demands of World War II. Known for its heavy
+    construction and powerful cartridge, it served extensively with U.S. and Allied
+    forces. The Thompson became deeply embedded in 20th-century military history and
+    popular culture alike.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/p90.jpg" alt="FN P90">
+  <h2>FN P90</h2>
+  <ul>
+    <li><strong>Origin:</strong> Belgium</li>
+    <li><strong>Caliber:</strong> 5.7×28mm</li>
+    <li><strong>Introduced:</strong> 1990</li>
+    <li><strong>Type:</strong> Personal Defense Weapon</li>
+  </ul>
+  <p>
+    The FN P90 represents a modern reinterpretation of the submachine gun concept.
+    Featuring a compact bullpup layout and distinctive top-mounted magazine, it was
+    designed for vehicle crews and support personnel. The P90 gained recognition for
+    its futuristic appearance and innovative engineering approach.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/mp40.jpg" alt="MP40">
+  <h2>MP40</h2>
+  <ul>
+    <li><strong>Origin:</strong> Germany</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1938</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The MP40 was a standard German submachine gun during World War II and is often
+    associated with mechanized and airborne units. Its stamped metal construction
+    reflected evolving wartime manufacturing techniques. The MP40 influenced postwar
+    SMG design and remains one of the most recognizable firearms of the era.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/sten.jpg" alt="Sten Mk II">
+  <h2>Sten Mk II</h2>
+  <ul>
+    <li><strong>Origin:</strong> United Kingdom</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1941</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The Sten Mk II was developed by Britain during World War II as an emergency weapon
+    designed for rapid and inexpensive production. Its extremely simple construction
+    allowed it to be manufactured in large numbers. Despite its crude appearance, the
+    Sten played a crucial role in arming Allied forces and resistance movements.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/mac10.jpg" alt="MAC-10">
+  <h2>MAC-10</h2>
+  <ul>
+    <li><strong>Origin:</strong> United States</li>
+    <li><strong>Caliber:</strong> .45 ACP / 9×19mm</li>
+    <li><strong>Introduced:</strong> 1970</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The MAC-10 was developed as a compact automatic firearm emphasizing high volume of
+    fire in a small package. Its simple construction and boxy profile made it easily
+    recognizable. While its practical adoption was limited, the MAC-10 became widely
+    known through media portrayals and remains a notable Cold War–era design.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/sterling.jpg" alt="Sterling L2A3">
+  <h2>Sterling L2A3</h2>
+  <ul>
+    <li><strong>Origin:</strong> United Kingdom</li>
+    <li><strong>Caliber:</strong> 9×19mm</li>
+    <li><strong>Introduced:</strong> 1953</li>
+    <li><strong>Type:</strong> Submachine Gun</li>
+  </ul>
+  <p>
+    The Sterling L2A3 was developed as a refinement of earlier British wartime designs
+    and emphasized improved reliability and ergonomics. Its distinctive curved magazine
+    and perforated barrel shroud helped differentiate it visually and mechanically from
+    its predecessors. The Sterling served as the standard British submachine gun for
+    decades and gained further recognition through its extensive use in film and media,
+    reinforcing its iconic silhouette.
+  </p>
+</article>
+  
+  <article class="card smg">
+  <img src="images/skorpion.jpg" alt="Škorpion vz. 61">
+  <h2>Škorpion vz. 61</h2>
+  <ul>
+    <li><strong>Origin:</strong> Czechoslovakia</li>
+    <li><strong>Caliber:</strong> .32 ACP</li>
+    <li><strong>Introduced:</strong> 1961</li>
+    <li><strong>Type:</strong> Machine Pistol / SMG</li>
+  </ul>
+  <p>
+    The Škorpion vz. 61 occupies a unique position between traditional submachine guns
+    and machine pistols. Designed for vehicle crews and security personnel, it featured
+    a compact frame and a folding wire stock that emphasized concealability and control.
+    Its use of a relatively small-caliber cartridge set it apart from contemporaries,
+    prioritizing controllability over raw firepower. The Škorpion became widely exported
+    and is often studied as an early attempt at personal defense weapon concepts.
+  </p>
+</article>
+  
+</main>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
